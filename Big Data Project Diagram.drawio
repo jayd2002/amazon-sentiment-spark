@@ -1,0 +1,70 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="kyo-WIOvD2pwjHhUtY6E">
+    <mxGraphModel dx="2735" dy="2144" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="hQ9AYsdOj-ECJnbr81cU-24" parent="1" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="1220" width="1410" x="110" y="-230" as="geometry" />
+        </mxCell>
+        <mxCell id="hQ9AYsdOj-ECJnbr81cU-3" edge="1" parent="1" source="hQ9AYsdOj-ECJnbr81cU-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Lucida Console;fontSize=14;" target="hQ9AYsdOj-ECJnbr81cU-2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hQ9AYsdOj-ECJnbr81cU-20" connectable="0" parent="hQ9AYsdOj-ECJnbr81cU-3" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Lucida Console;fontSize=14;" value="Stream" vertex="1">
+          <mxGeometry relative="1" x="-0.0151" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hQ9AYsdOj-ECJnbr81cU-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Lucida Console;fontSize=14;fillColor=#dae8fc;strokeColor=#6c8ebf;gradientColor=#7ea6e0;" value="Data Source - Hugging Face API" vertex="1">
+          <mxGeometry height="132.5" width="220" x="-30" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="hQ9AYsdOj-ECJnbr81cU-8" edge="1" parent="1" source="hQ9AYsdOj-ECJnbr81cU-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Lucida Console;fontSize=14;" target="hQ9AYsdOj-ECJnbr81cU-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hQ9AYsdOj-ECJnbr81cU-21" connectable="0" parent="hQ9AYsdOj-ECJnbr81cU-8" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Lucida Console;fontSize=14;" value="Route" vertex="1">
+          <mxGeometry relative="1" x="-0.1714" y="-3" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hQ9AYsdOj-ECJnbr81cU-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Lucida Console;fontSize=14;fillColor=#d5e8d4;gradientColor=#97d077;strokeColor=#82b366;" value="Cloud NAT Gateway&lt;div&gt;(Enable Internet access for the cluster)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="130" width="240" x="380" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="hQ9AYsdOj-ECJnbr81cU-9" edge="1" parent="1" source="hQ9AYsdOj-ECJnbr81cU-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Lucida Console;fontSize=14;" target="hQ9AYsdOj-ECJnbr81cU-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hQ9AYsdOj-ECJnbr81cU-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Lucida Console;fontSize=14;fillColor=#d5e8d4;gradientColor=#97d077;strokeColor=#82b366;" value="Data Stream Subset using the Py datasets library" vertex="1">
+          <mxGeometry height="130" width="240" x="380" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="hQ9AYsdOj-ECJnbr81cU-23" edge="1" parent="1" source="hQ9AYsdOj-ECJnbr81cU-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Lucida Console;fontSize=14;" target="hQ9AYsdOj-ECJnbr81cU-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hQ9AYsdOj-ECJnbr81cU-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Lucida Console;fontSize=14;fillColor=#d5e8d4;gradientColor=#97d077;strokeColor=#82b366;" value="Preprocessing (Lowercase, remove symbols/punctuation, filter neutral reviews, apply binary labels)" vertex="1">
+          <mxGeometry height="130" width="240" x="380" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="hQ9AYsdOj-ECJnbr81cU-14" edge="1" parent="1" source="hQ9AYsdOj-ECJnbr81cU-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Lucida Console;fontSize=14;" target="hQ9AYsdOj-ECJnbr81cU-13" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hQ9AYsdOj-ECJnbr81cU-10" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Lucida Console;fontSize=14;fillColor=#d5e8d4;gradientColor=#97d077;strokeColor=#82b366;" value="Spark ML Pipeline (Tokenizer, Stop words removal, TF-IDF, Logistic Regression)" vertex="1">
+          <mxGeometry height="130" width="240" x="670" y="138.75" as="geometry" />
+        </mxCell>
+        <mxCell id="hQ9AYsdOj-ECJnbr81cU-19" edge="1" parent="1" source="hQ9AYsdOj-ECJnbr81cU-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Lucida Console;fontSize=14;" target="hQ9AYsdOj-ECJnbr81cU-18" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hQ9AYsdOj-ECJnbr81cU-22" connectable="0" parent="hQ9AYsdOj-ECJnbr81cU-19" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Lucida Console;fontSize=14;" value="Results" vertex="1">
+          <mxGeometry relative="1" x="-0.0853" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hQ9AYsdOj-ECJnbr81cU-13" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Lucida Console;fontSize=14;fillColor=#d5e8d4;gradientColor=#97d077;strokeColor=#82b366;" value="Model Training &amp;amp; Evaluation (80% train, 20% test)" vertex="1">
+          <mxGeometry height="130" width="240" x="670" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="hQ9AYsdOj-ECJnbr81cU-18" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Lucida Console;fontSize=14;fillColor=#fad7ac;strokeColor=#b46504;" value="Output Results (Accuracy and F1 Score)" vertex="1">
+          <mxGeometry height="130" width="240" x="1440" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="hQ9AYsdOj-ECJnbr81cU-25" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=17;fontFamily=Lucida Console;" value="GCP Cluster Setup (&lt;span style=&quot;line-height: 115%;&quot;&gt;n1-standard-4&lt;/span&gt;)" vertex="1">
+          <mxGeometry height="110" width="380" x="940" y="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
