@@ -64,7 +64,7 @@ big-data-project/
 
 ## System Architecture
 
-![Architecture Diagram](Diagrams/architecture_diagram.png)
+![Architecture Diagram](Diagrams/system_diagram.png)
 
 - Data streamed directly from Hugging Face API — no full dataset download required
 - Cloud NAT Gateway enables secure cluster internet access
