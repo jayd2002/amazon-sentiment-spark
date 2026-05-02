@@ -31,20 +31,24 @@ A Naïve Bayes baseline model was also implemented under identical conditions to
 ```
 big-data-project/
 │
-├── README.md
-│
-├── notebook/
-│   └── sentiment_analysis.ipynb       # Main PySpark notebook
-│
-├── report/
-│   └── Sentiment_Analysis_Report.docx # Full technical report
-│
-├── diagrams/
+|
+├── Diagrams/
 │   ├── architecture_diagram.png       # System architecture diagram
 │   └── architecture_diagram.drawio    # Editable diagram source file
 │
-└── results/
-    └── (output screenshots)           # Model output and evaluation results
+├── Notebook/
+│   └── sentiment_analysis.ipynb       # Main PySpark notebook
+|
+├── Presentations /
+│   └── Final Presentation.pptx        # In-class Presentation
+|
+├── report/
+│   └── Final Report.docx              # Full technical report
+│
+├── Results/
+|   └── (output screenshots)           # Model output and evaluation results
+|
+├── README.md
 ```
 
 ---
