@@ -39,10 +39,10 @@ big-data-project/
 ├── Notebook/
 │   └── sentiment_analysis.ipynb       # Main PySpark notebook
 |
-├── Presentations /
+├── Presentations/
 │   └── Final Presentation.pptx        # In-class Presentation
 |
-├── report/
+├── Reports/
 │   └── Final Report.docx              # Full technical report
 │
 ├── Results/
